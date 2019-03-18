@@ -1,0 +1,16 @@
+{
+  "name": "air-13-server",
+  "version": "1.0.0",
+  "description": "drone server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HAEDONG SUNG",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0",
+    "waait": "^1.0.4"
+  }
+}
