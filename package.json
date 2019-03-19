@@ -4,6 +4,8 @@
   "description": "drone server",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
+    "dev": "SET NODE_ENV=development&& nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "HAEDONG SUNG",
@@ -11,6 +13,10 @@
   "dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0",
+    "tellojs": "^0.1.15",
     "waait": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
   }
 }
