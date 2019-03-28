@@ -11,10 +11,12 @@
   "author": "HAEDONG SUNG",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "socket.io": "^2.2.0",
     "tellojs": "^0.1.15",
-    "waait": "^1.0.4"
+    "waait": "^1.0.4",
+    "ws": "^6.2.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
