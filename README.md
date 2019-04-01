@@ -25,6 +25,8 @@ npm install
 npm start
 ```
 
+**server를 실행시키기 전 drone wifi와 연결되어 있어야 합니다**
+
 ## Feature
 
 ### Left Controller
