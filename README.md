@@ -40,20 +40,20 @@ npm start
 ### Center Screen
 
 - 드론 카메라 영상 스트리밍
-- face-api.js를 이용하여 사용자 얼굴 인식 후 백플립
+- Face-api.js를 이용하여 사용자 얼굴 인식 후 백플립
 
 
 ## Client-Side Specification
 
 - ES2015
 - React
-- face-api.js
-- socket.io-client
+- Face-api.js
+- Socket.io-client
 
 ## Server-Side Specification
 
 - ES2015
-- socket.io
+- Socket.io
 - Websocket
 
 ## Test (Client-side)
@@ -62,14 +62,13 @@ npm start
 
 ## Challenges
 
-- tello 드론이 UDP 프로토콜 사용하여 처음의 기획과 다른 방향으로 프로젝트를 진행하게 되어 부담이 되었지만 TCP와 UDP에 대한 공부를 할 수 있는 좋은 기회가 되었습니다.
+- tello 드론이 UDP 프로토콜 사용하여 처음의 기획하였던 웹 스트리밍 채팅 애플리케이션과 다른 방향으로 프로젝트를 진행하게 되어 부담이 되었지만 TCP와 UDP에 대한 공부를 할 수 있는 좋은 기회가 되었습니다.
 - 실시간으로 영상을 스트리밍을 하는 데에 버퍼와 영상 데이터 타입에 대한 이해가 부족하다는 것을 많이 느꼈습니다. 스트림과 버퍼에 대한 공부를 더 해보고 싶어졌습니다.
-- face0api.js는 Tensorflow기반으로 만들어졌는데 Tensorflow의 핵심에 대한 이해가 부족한 것 같아 더 학습해 보려고 합니다.
+- Face-api.js는 Tensorflow기반으로 만들어졌는데 Tensorflow의 핵심에 대한 이해가 부족한 것 같아 더 학습해 보려고 합니다.
 
 ## Things to do
 
-기존의 기획을 추가해보려 합니다. UDP 프로토콜의 문제를 이더넷 LAN선 연결을 통해 사람들에게 실시간으로 영상을 스트리밍을 하면서 \
-채팅기능도 넣어 좀 더 유저들과 상호작용할 수 있는 서비스를 만들어 보고자 합니다.
+기존의 기획을 추가해보려 합니다. UDP 프로토콜의 문제를 이더넷 LAN선 연결을 통해 사람들에게 실시간으로 영상을 스트리밍을 하면서 채팅기능도 넣어 좀 더 유저들과 상호작용할 수 있는 서비스를 만들어 보고자 합니다.
 
 - 실시간 채팅 기능
 - 드론 영상정보를 통한 사진 저장 및 동영상 저장
