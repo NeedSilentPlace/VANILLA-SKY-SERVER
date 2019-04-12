@@ -20,6 +20,10 @@ droneState.bind(STATE_PORT);
 droneVideo.bind(VIDEO_PORT);
 drone.send('command', 0, 7, COMMAND_PORT, HOST, (err) => console.log(err));
 drone.send('streamon', 0, 8, COMMAND_PORT, HOST, (err) => console.log(err));
+drone.send('battery?', 0, 8, COMMAND_PORT, HOST, (err) => console.log(err));
+drone.on('message', (m) => {
+  console.log(m.toString());
+})
 
 websocket.on('connection', function connection(websocket) {
   console.log('web socket is connected!');
@@ -33,13 +37,7 @@ websocket.on('connection', function connection(websocket) {
 
 io.on('connection', socket => {
   socket.on('command', command => {
-    if(Array.isArray(command)) {
-      console.log(command);
-      combo(command);
-    } else {
-      console.log('not combo', command);
-      drone.send(command, 0, command.length, COMMAND_PORT, HOST, (err) => console.log(err));
-    }
+    drone.send(command, 0, command.length, COMMAND_PORT, HOST, (err) => console.log(err));
   });
   socket.emit('status', 'connected');
 });
@@ -83,7 +81,7 @@ droneVideo.on('message', (message) => {
 let currentBattery = 101;
 
 droneState.on('message', (message) => {
-  const batteryMessage = message.toString().split(';')[15];
+  const batteryMessage = message.toString().split(';')[10];
   const batteryString = batteryMessage.split(':')[1];
   const battery = parseInt(batteryString);
   if(battery !== currentBattery) {
