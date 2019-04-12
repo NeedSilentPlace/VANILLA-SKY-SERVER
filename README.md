@@ -28,7 +28,7 @@ npm start
 ```
 
 **server를 실행시키기 전 drone wifi와 연결되어 있어야 합니다** \
-**src 디렉토리에 본인의 사진(master.PNG)를 업로드 하셔야 합니다**
+**src 디렉토리에 본인의 사진(master.PNG)를 업로드 하셔야 합니다**(VANILLA-SKY-CLIENT)
 
 ## Feature
 
