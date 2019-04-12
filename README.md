@@ -7,6 +7,8 @@
 
 ![](drone.gif)
 
+[YouTube 데모](https://www.youtube.com/watch?v=12MrukM4gao)
+
 ## Installation
 
 ### Client
