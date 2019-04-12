@@ -5,6 +5,8 @@
 **VANILLA SKY**는 DJI tello 드론을 컨트롤 할 수 있는 웹용 애플리케이션입니다. \
 자신의 드론을 조종할 수 있으며, 드론의 영상정보를 브라우저에 실시간으로 스트리밍합니다. 더불어 드론 사용자의 사진을 인식시키면 영상정보와 사용자 사진을 비교하여 드론이 백플립을 할 수 있는 기능을 구현해 보았습니다.
 
+![](drone.gif)
+
 ## Installation
 
 ### Client
@@ -25,7 +27,8 @@ npm install
 npm start
 ```
 
-**server를 실행시키기 전 drone wifi와 연결되어 있어야 합니다**
+**server를 실행시키기 전 drone wifi와 연결되어 있어야 합니다** \
+**src 디렉토리에 본인의 사진(master.PNG)를 업로드 하셔야 합니다**
 
 ## Feature
 
